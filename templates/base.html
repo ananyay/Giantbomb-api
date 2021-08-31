@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gaint Bomb API Example</title>  
+  <link rel="canonical" href="https://codepen.io/DasBo/pen/RpwOmp?limit=all&page=38&q=image" />  
+  <style class="cp-pen-styles">
+      @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+      @import url("https://fonts.googleapis.com/css?family=Raleway");
+  </style>
+    
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Datable pagination css -->  
+
+  <!-- BootStrap=Table -->        
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.css">
+  <link href="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.css" rel="stylesheet">
+  
+  <!-- Data Tables -->
+  <link href="//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" rel="stylesheet">
+
+  <!-- adding custom style sheet -->
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+
+<body>
+  <main role="main" class="container-fluid" style="background-color:white;">
+    <div class="jumbotron jumbotron-fluid" style="background-color:white;">
+      <div class="container-fluid">
+      <!-- Block for Title and Description -->
+        <div class="text-center">
+          <img src="../static/images/logo.jpeg" alt="Giant Bomb">
+          <h1>Gaint Bomb API Example</h1>
+          <P display-4> Let's get started ,Search for your favourite game </P>
+        </div>
+      </div>  
+      <hr>
+      <div class="container-fluid">
+        <!-- Block for Search Field -->        
+        <div class="input-group">
+          <input type="text" id="id-input-str" class="form-control input-lg" placeholder="Enter Game name and hit Search">        
+          <button type="button" class="btn btn-outline-secondary" onclick="fn_search()" >Search</button>
+        </div>        
+      </div>
+      <hr>
+      <div class="container-fluid">
+        <!-- Block for Search Results -->
+          <div class="text-center">
+            <h2>Search Results</h2>
+            <div id="results_data">
+              Nothing yet please search
+            </div>
+          </div>
+      </div>  
+    </div>  
+  </main>  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-table@1.18.0/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
+  <script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-table@1.18.0/dist/extensions/export/bootstrap-table-export.min.js"></script>
+  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+
+  <!-- Adding Custom JS Script files -->
+  <script type="text/javascript" src="{{url_for('static',filename='js/app.js')}}"></script>
+</body>
+
+</html>

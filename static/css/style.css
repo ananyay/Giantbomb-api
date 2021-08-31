@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
+
+title {
+  font-weight: bold;
+}
+
+.btn-outline-secondary{
+  padding: 10px; 
+}
+
+.table{
+  width: auto;
+}
+
+.table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  min-width: 160px;
+  max-width: auto;
+}
+
+.table td:hover {
+  overflow:visible;  
+  white-space: unset;
+  }    
