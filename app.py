@@ -41,7 +41,7 @@ def search_post():
 @app.route('/search',methods=['GET'])
 def search_get():
     print("In the search get route")
-    return render_template('search.html',row_data ="")
+    return render_template('base.html',row_data ="")
 
 #  API Endpoint for curl 
 @app.route('/search/<inputstr>')
